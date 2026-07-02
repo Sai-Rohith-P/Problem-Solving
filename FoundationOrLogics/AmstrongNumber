@@ -1,0 +1,20 @@
+public class AmstrongNumber {
+    static boolean Amstrong(int n){
+        int total =0;
+        int n1 =  n;
+        while(n>0){
+            int temp = n%10;
+            total = total + temp *temp *temp;
+            n = n/10;
+        }
+        return n1==total;
+    }
+    public static void main(String[] args) {
+        int n=153;
+        if(Amstrong(n)){
+            System.out.println("Amstrong");
+        }else{
+            System.out.println("Not");
+        }
+    }
+}
