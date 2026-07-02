@@ -1,3 +1,4 @@
+// day-1 
 public class AmstrongNumber {
     static boolean Amstrong(int n){
         int total =0;
